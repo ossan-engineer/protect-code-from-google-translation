@@ -1,0 +1,13 @@
+{
+  "name": "Protect Code from Google Translation",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "Chrome Extension for protecting code from Google Translation",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["index.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
